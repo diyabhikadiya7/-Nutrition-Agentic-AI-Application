@@ -1,0 +1,102 @@
+# ──────────────────────────────────────────────
+#  NutriAI — Nutrition Agentic AI Application
+#  .gitignore
+# ──────────────────────────────────────────────
+
+# ── Environment & Secrets ──────────────────────
+.env
+*.env
+!.env.example
+
+# ── Python ─────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+
+# ── Virtual Environments ───────────────────────
+venv/
+env/
+ENV/
+.venv/
+.virtualenv/
+
+# ── Python Package Builds ──────────────────────
+build/
+dist/
+*.egg-info/
+*.egg
+MANIFEST
+.eggs/
+
+# ── Distribution / Packaging ───────────────────
+pip-log.txt
+pip-delete-this-directory.txt
+wheels/
+share/python-wheels/
+
+# ── Testing ────────────────────────────────────
+.pytest_cache/
+.tox/
+.nox/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+*.log
+nosetests.xml
+
+# ── Type Checkers ──────────────────────────────
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pytype/
+.pyre/
+
+# ── IDE / Editors ──────────────────────────────
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── Jupyter Notebooks ──────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Generated Plans (user data) ────────────────
+plans/*.md
+!plans/sample_nutrition_plan_demo.md
+
+# ── Logs ───────────────────────────────────────
+*.log
+logs/
+
+# ── OS Files ───────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+Desktop.ini
+ehthumbs.db
+Thumbs.db
+$RECYCLE.BIN/
+
+# ── Windows Temp Files ─────────────────────────
+*.tmp
+*.bak
+*.orig
+
+# ── Flask Instance Folder ──────────────────────
+instance/
+flask_session/
+
+# ── ibm-watsonx-ai cache ───────────────────────
+.ibm/

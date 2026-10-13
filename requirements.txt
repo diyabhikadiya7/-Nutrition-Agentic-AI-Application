@@ -1,0 +1,23 @@
+# NutriAI — Nutrition Agentic AI Application
+# Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# ── Web Framework ───────────────────────────────
+flask==3.0.3
+flask-cors==4.0.1
+
+# ── HTTP Client ────────────────────────────────
+requests==2.32.3
+
+# ── Environment Variables ──────────────────────
+python-dotenv==1.0.1
+
+# ── Markdown Rendering ─────────────────────────
+markdown==3.6
+
+# ── Optional: IBM watsonx.ai Python SDK ────────
+# Provides faster, native SDK access to IBM Granite models.
+# Requires C++ build tools (Microsoft Visual C++ on Windows).
+# If not installed, the app automatically falls back to the REST API.
+# Uncomment the line below to install:
+# ibm-watsonx-ai>=1.0.0
