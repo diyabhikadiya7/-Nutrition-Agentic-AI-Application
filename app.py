@@ -217,14 +217,11 @@ def internal_error(e):
 if __name__ == "__main__":
     port = int(os.getenv("PORT", 5000))
     debug = os.getenv("FLASK_DEBUG", "False").lower() == "true"
-    print(f"""
-╔══════════════════════════════════════════════════════╗
-║       Nutrition Agentic AI — IBM Granite LLM         ║
-║       Powered by watsonx.ai                          ║
-╠══════════════════════════════════════════════════════╣
-║  URL  : http://localhost:{port:<27}║
-║  Model: IBM Granite 13B Instruct v2                  ║
-║  Mode : {'DEBUG' if debug else 'PRODUCTION':<44}║
-╚══════════════════════════════════════════════════════╝
-""")
+    mode_label = "DEBUG" if debug else "PRODUCTION"
+    print(f"Nutrition Agentic AI -- IBM Granite LLM")
+    print(f"Powered by watsonx.ai")
+    print(f"URL  : http://localhost:{port}")
+    print(f"Model: IBM Granite 13B Instruct v2")
+    print(f"Mode : {mode_label}")
+    print()
     app.run(host="0.0.0.0", port=port, debug=debug)
